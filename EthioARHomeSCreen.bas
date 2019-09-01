@@ -25,6 +25,9 @@ Sub Activity_Create(FirstTime As Boolean)
 	
 	AR_Interface.addJavascriptInterface(EthioAREngine, "AR_Interface")
 	AR_Interface.addWebChromeClient(EthioAREngine,"EthioARChrome")
+	
+	
+	EthioAREngine.LoadUrl("file:///android_asset/my_webpage.htm")
 End Sub
 
 Sub Activity_Resume
@@ -33,4 +36,8 @@ End Sub
 
 Sub Activity_Pause (UserClosed As Boolean)
 
+End Sub
+
+Sub showARMsg(Value As Boolean)
+	Msgbox("Sent from JS","EthioAR")
 End Sub
