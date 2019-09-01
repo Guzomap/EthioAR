@@ -6,7 +6,7 @@ Version=9.3
 @EndOfDesignText@
 #Region  Activity Attributes 
 	#FullScreen: False
-	#IncludeTitle: True
+	#IncludeTitle: False
 #End Region
 
 Sub Process_Globals
@@ -16,13 +16,15 @@ Sub Process_Globals
 End Sub
 
 Sub Globals
-	'These global variables will be redeclared each time the activity is created.
-	'These variables can only be accessed from this module.
-
+	Private AR_Interface As WebViewExtras
+	Private EthioAREngine As WebView
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
 	Activity.LoadLayout("EthioARHome")
+	
+	AR_Interface.addJavascriptInterface(EthioAREngine, "AR_Interface")
+	AR_Interface.addWebChromeClient(EthioAREngine,"EthioARChrome")
 End Sub
 
 Sub Activity_Resume
