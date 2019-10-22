@@ -7,6 +7,6 @@ ModuleBreakpoints2=
 ModuleClosedNodes0=
 ModuleClosedNodes1=1
 ModuleClosedNodes2=
-NavigationStack=Main,Activity_Create,27,3,Main,Activity_Pause,38,0,Main,EnterBtn_Click,40,3,Main,Activity_Resume,33,0,Visual Designer,EthioARHome.bal,-100,2,EthioARHomeSCreen,Activity_Resume,24,0,EthioARHomeSCreen,Globals,13,4,EthioARHomeSCreen,Activity_Pause,34,0,EthioARHomeSCreen,showARMsg,35,6,EthioARHomeSCreen,Activity_Create,18,6
+NavigationStack=Main,Activity_Resume,33,0,EthioARHomeSCreen,Activity_Pause,49,0,Visual Designer,EthioARHome.bal,-100,3,EthioARHomeSCreen,show_ARMsg,49,2,EthioARHomeSCreen,EthioARChrome_ConsoleMessage,54,0,EthioARHomeSCreen,Activity_Resume,43,0,EthioARHomeSCreen,Activity_Create,26,6,EthioARHomeSCreen,Process_Globals,7,0,EthioARHomeSCreen,Globals,10,4
 SelectedBuild=0
 VisibleModules=1,2

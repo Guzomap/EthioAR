@@ -1,8 +1,55 @@
 <html>
-    <head></head>
+    <head>
+        
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./materialize.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="./materialize.js"></script>
+
+    <style>
+        html,body{
+            background-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+    </head>
     <body>
+
+            <div class="row">
+                    <div class="col s12 m6">
+                      <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                          <span class="card-title">Card Title</span>
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                            
+
+        <button onclick="check()" class="btn waves-effect waves-light" >Check
+                <i class="material-icons right">send</i>
+              </button>
+
         <script>
-            AR_Interface.CallSub('showARMsg', true);
+            var me = {
+                first:"Daniel",
+                second:"Getachew"
+            }
+
+            function check()
+            {
+                B4A.CallSub("show_ARMsg",true,"This is Check Function");
+            }
+            
+            B4A.CallSub("show_ARMsg",true,JSON.stringify(me));
         </script>
     </body>
 </html>
